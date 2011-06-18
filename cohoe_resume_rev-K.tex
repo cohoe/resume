@@ -1,0 +1,210 @@
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% Yisong Yue's resume
+%%   - based off work by Michael DeCorte 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%
+%% The following code sets up the document formatting
+%%
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, line]{res_yy}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\voffset}{-.5in}
+\addtolength{\textwidth}{1in} \addtolength{\textheight}{5in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Grant Cohoe}
+
+%this is right aligned
+\address{
+2557 Nathaniel Rochester Hall, Rochester NY 14623\ \ \ \ \ \ \ phone: (330) 790-1701\ \ \ \ \ \ \ Email: cohoe@csh.rit.edu  
+}
+
+\begin{resume}
+
+%%
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+
+\section{\textsc{Objective}}
+Seeking co-op employment in design, installation, and maintenance of large scale data systems and infrastructure to augment knowledge about advanced information technology systems. Available Summer 2011 (For 3-6 month assignment).
+\section{\textsc{Education}}
+
+\textbf{Rochester Institute of Technology} \hfill May 2013 \\
+Bachelor of Science in Applied Networking and System Administration \\
+{\bf Presidential Scholarship} recipient for academic excellence \\
+GPA: 3.549 (PFOS: 3.620)
+
+%%
+%% the meat of the resume starts now
+%%
+\section{\textsc{Coursework}}
+
+Java Programming, Cyber Self-Defense, Computer System \& Network Fundamentals, Large Scale Computing with Mainframes, Perl Scripting, Web Design, System Administration, Database
+
+\begin{formatb}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Work Experience}}
+
+\employer{\textbf{Computer Science House}}
+\location{Rochester, New York}
+\title{System Administrator}
+\dates{Winter 2010 - Present}
+\begin{position}
+Responsible for the maintenance and operation of house services (mail, news, web, virtual machines, shell access, file storage) and infrastructure (network, cooling, power). These services are used by all current members of the house as well as alumni.
+\end{position}
+
+%%\employer{\textbf{RIT: Sponsored Programs Accounting/Payroll}}
+%%\location{Rochester, New York}
+%%\title{Wiki Administrator}
+%%\dates{Winter 2010 - Present}
+%%\begin{position}
+%%Designed and maintain a wiki database for the storage and tracking of accounting procedures and files. 
+%%\end{position}
+
+\employer{\textbf{Tallmadge City Schools}}
+\title{Auditorium Technical Director}
+\location{Tallmadge, OH}
+\dates{Fall 2008-Summer 2009, Summer 2010}
+\begin{position}
+Managed and planned for all events hosted in the facility and coordinated with staff/students to facilitate the production of events. This included technical services (sound, lighting, rigging), planning (logistics, blocking), setup (testing, installation, programming), and documentation. 
+\end{position}
+
+\employer{\textbf{Camp Fitch Computer Camp}}
+\title{Counselor}
+\location{North Springfield, PA}
+\dates{Summers 2007 - Present}
+\begin{position}
+Teach introductory/advanced topics to 8-13 year old children who wish to learn computer skills. Must be able to give campers a solid foundation in computer usage, concepts, and ethics.
+\end{position}
+
+\employer{\textbf{Tallmadge City Schools}}
+\title{Technical Work Experience Student}
+\location{Tallmadge, OH}
+\dates{Summer 2004 - Summer 2009}
+\begin{position}
+Assisted IT staff with setting up and configuring client workstations and printers within a small enterprise network for both student and staff use. Required knowledge of backend systems, network configuration, and ability to work without supervision.
+\end{position}
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Projects \& Activities}}
+
+\employer{\textbf{Computer Science House Member}}
+\dates{Fall 2010 - Present}
+\begin{position}
+Membership requires the completion of at least one large project per year (with a focus on self-learning), attending various technical seminars and social events, and networking with professionals across the country.
+\end{position}
+
+\employer{\textbf{Computer Science House Active Directory Integration}}
+\dates{Fall 2010 - Present}
+\begin{position}
+Integrated an Active Directory installation into the current house UNIX environment for use by member projects. Services tied together include Kerberos, LDAP, NIS, and NFS. 
+\end{position}
+
+%%\employer{\textbf{RIT: Center for Student Innovation - Cloud Rack}}
+%%\dates{Winter/Spring 2010}
+%%\begin{position}
+%%Co-designer of a large cluster of server hardware for project use by the Innovation Center. Worked with two others to design infrastructure upgrades and disk server hardware/SAN architecture. 
+%%\end{position}
+
+\employer{\textbf{IBM Master The Mainframe Competition Participant}}
+\dates{Fall 2010}
+\begin{position}
+Participated in annual competition to learn skills on the IBM System Z Mainframe. Skills required for completion include ISPF, JCL, RACF, COBOL, USS, FTP, SMP/E, C, Data Set manipulation, and system navigation. Completed parts 1 \& 2 of 3. 
+\end{position}
+
+\employer{\textbf{FIRST Robotics Competition Volunteer}}
+\title{Inspector}
+\dates{Spring 2010}
+\begin{position}
+Volunteer inspector during the regional competition of the FIRST Robotics Competition. Responsible for ensuring team compliance with all competition rules and regulations.
+\end{position}
+
+%% \employer{\textbf{Tallmadge High School Auditorium Documentation}}
+%% \dates{Spring 2009}
+%% \begin{position}
+%% Maintain a MediaWiki-driven knowledge base for documenting procedures and operational information for the facility to be used by the technical staff.
+%% \end{position}
+
+
+%% 
+%% This section could also use more formatting, but looks ok, as is
+%%
+
+\section{\textsc{Skills}}
+
+\textbf{Operating System Familiarity}: Microsoft Windows (Desktop and Server), Mac OS X, Linux (Familiar with all major distro's, with focus on Red Hat), FreeBSD, Cisco IOS, IBM z/OS \& USS.
+
+\textbf{Technology \& Infrastructure}: Ethernet, AOE, Routing \& Switching (TCP/IP), Cooling Implementation, Power Distribution, Kerberos, NIS, Active Directory, DNS, DHCP, LDAP, Advanced Virtualization concepts \& implementation, SAN concepts, Cloud concepts
+
+\textbf{Programming/Scripting}: Proficient with Perl and Bash, Basic familiarity with HTML, CSS, Java, VBScript
+
+
+%%\section{\textsc{Certifications}}
+
+%%\textbf{Hurricane Electric IPv6 "Sage"}: Knowlegeable in configuration of network services such as web, email, and DNS over the IPv6 protocol suite.
+
+%%\textbf{Microsoft Certified Technology Specialist}: Windows Server 2008 Network Infrastructure \& Active Directory. Training is in progress.
+
+
+%%
+%% Note that we're redefining the formatting
+%% We only have one row of information now, instead of two
+%%
+
+%%\section{\textsc{Activities}}
+
+%%\begin{formatb}
+%%  \employer{l}\dates{r}\\
+%%  \body\\
+%%\end{formatb}
+
+%%\employer{\textbf{Learning about advanced technology}}
+%%\dates{Continuous}
+%%\begin{position}
+%%I particularly enjoy learning about advanced technologies and brainstorming ways of implementing them in various situations. 
+%%\end{position}
+
+\end{resume}
+\end{document}

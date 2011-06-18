@@ -1,0 +1,84 @@
+Grant Cohoe
+
+Address: 2557 Nathaniel Rochester Hall
+	 Rochester, New York, 14623
+
+Phone: (330) 790-1701
+
+Email: cohoe@csh.rit.edu
+
+Objective: Seeking co-op employment in design, installation, and maintenance of large scale 
+	   data systems and infrastructure to augment knowledge about advanced information 
+	   technology systems. Available Summer 2011 (For 3-6 month assignment).
+
+Education: Rochester Institute of Technology
+	   Bachelor of Science in Applied Networking and System Administration
+	   Presidential Scholarship recipient for academic excellence
+	   GPA: 3.549 (PFOS: 3.620)
+
+Coursework: Java Programming, Cyber Self-Defense, Computer System & Network Fundamentals, 
+	    Large Scale Computing with Mainframes, Perl Scripting, Web Design, 
+	    System Administration, Database
+
+Work Experience:
+	Computer Science House (Rochester NY) - System Administrator
+	Winter 2010 - Present
+	Responsible for the maintenance and operation of house services (mail, news, web, 
+	virtual machines, shell access, file storage) and infrastructure (network, cooling, 
+	power). These services are used by all current members of the house as well as alumni.
+
+	RIT: Sponsored Programs Accounting/Payroll (Rochester, NY) - Wiki Administrator
+	Winter 2010 - Present
+	Designed and maintain a wiki database for the storage and tracking of accounting 
+	procedures and files.
+
+	Tallmadge City Schools (Tallmadge, OH) - Auditorium Technical Director
+	Fall 2008 - Summer 2009, Summer 2010
+	Managed and planned for all events hosted in the facility and coordinated with 
+	staff/students to facilitate the production of events. This included technical 
+	services (sound, lighting, rigging), planning (logistics, blocking), setup (testing, 
+	installation, programming), and documentation.
+
+	Camp Fitch Computer Camp (North Springfield, PA) - Counselor
+	Summers 2007 - Present
+	Teach introductory/advanced topics to 8-13 year old children who wish to learn 
+	computer skills. Must be able to give campers a solid foundation in computer usage, 
+	concepts, and ethics.
+
+	Tallmadge City Schools (Tallmadge, OH) - Technical Work Experience Student
+	Summer 2004 - Summer 2009
+	Assisted IT staff with setting up and configuring client workstations and printers within a 	small enterprise network for both student and staff use. Required knowledge of backend 	
+	systems, network configuration, and ability to work without supervision.
+
+Projects & Activities:
+	Computer Science House Member (Fall 2010 - Present)
+	Membership requires the completion of at least one large project per year (with a 
+	focus on self-learning), attending various technical seminars and social events, 
+	and networking with professionals across the country.
+
+	Active Directory Integration (Fall 2010 - Present)
+	Integrated an Active Directory installation into the current UNIX environment. 
+	Services tied together include Kerberos, LDAP, NIS, and NFS.
+
+	IBM Master The Mainframe Competition Participant (Fall 2010)
+	Participated in annual competition to learn skills on the IBM System Z Mainframe. 
+	Skills required for completion include ISPF, JCL, RACF, COBOL, USS, FTP, SMP/E, 
+	C, Data Set manipulation, and system navigation. Completed parts 1 & 2 of 3.
+
+	FIRST Robotics Competition Volunteer (Spring 2010)
+	Volunteer inspector during the regional competition of the FIRST Robotics Competition. 
+	Responsible for ensuring team compliance with all competition rules and regulations.
+
+Skills:
+	Operating System Familiarity: 
+		Microsoft Windows (Desktop and Server), Mac OS X, Linux (Familiar with all 
+		major distro’s, with focus on Red Hat), FreeBSD, Cisco IOS, IBM z/OS & USS.
+
+	Technology & Infrastructure: 
+		Technology & Infrastructure: Ethernet, AOE, Routing & Switching (TCP/IP), 
+		Cooling Implementation, Power Distribution, Kerberos, NIS, Active Directory,
+		DNS, DHCP, LDAP, Advanced Virtualization concepts & implementation, SAN 
+		concepts, Cloud concepts
+
+	Programming/Scripting: 
+		Proficient with Perl and Bash, Basic familiarity with HTML, CSS, Java, VBScript
