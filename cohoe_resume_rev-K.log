@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  28 NOV 2011 11:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  30 DEC 2011 15:02
 entering extended mode
  %&-line parsing enabled.
 **cohoe_resume_rev-K.tex
@@ -239,7 +239,7 @@ File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 )
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 17.
+(hyperref)                setting the option has no effect on input line 15.
 
 
 Package hyperref Warning: Values of option `pdfpagemode':
@@ -250,28 +250,28 @@ Package hyperref Warning: Values of option `pdfpagemode':
 (hyperref)                * `UseOC' (PDF 1.5)
 (hyperref)                * `UseAttachments' (PDF 1.6)
 (hyperref)                * An empty value disables the option.
-(hyperref)                Unknown value `Full' on input line 17.
+(hyperref)                Unknown value `Full' on input line 15.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+Package hyperref Info: Option `colorlinks' set `true' on input line 15.
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 17.
+(hyperref)                setting the option has no effect on input line 15.
 
 No file cohoe_resume_rev-K.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 (/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
@@ -297,7 +297,7 @@ File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \MPnumerator=\count104
 \everyMPtoPDFconversion=\toks22
 )))
-Package hyperref Info: Link coloring ON on input line 48.
+Package hyperref Info: Link coloring ON on input line 46.
  (/usr/local/texlive/2009/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -306,16 +306,16 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count105
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \ref on input line 46.
+LaTeX Info: Redefining \pageref on input line 46.
 \AtBeginShipoutBox=\box27
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 65.
+(Font)              using `OT1/cmr/bx/n' instead on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 95.
+(Font)              <7> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 95.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 95.
+(Font)              <5> on input line 93.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 93.
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -331,11 +331,11 @@ Here is how much of TeX's memory you used:
  7446 multiletter control sequences out of 15000+200000
  9944 words of font info for 37 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 40i,6n,23p,315b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,6n,23p,324b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on cohoe_resume_rev-K.pdf (1 page, 57557 bytes).
+Output written on cohoe_resume_rev-K.pdf (1 page, 57712 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
