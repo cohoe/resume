@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  10 MAR 2012 10:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  15 MAR 2012 16:59
 entering extended mode
  %&-line parsing enabled.
 **cohoe_resume_rev-K.tex
@@ -331,11 +331,11 @@ Here is how much of TeX's memory you used:
  7446 multiletter control sequences out of 15000+200000
  9944 words of font info for 37 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 40i,6n,23p,324b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,6n,23p,331b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on cohoe_resume_rev-K.pdf (1 page, 57775 bytes).
+Output written on cohoe_resume_rev-K.pdf (1 page, 57569 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
