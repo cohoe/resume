@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.26)  26 MAR 2012 22:09
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.26)  29 MAY 2012 23:22
 entering extended mode
 **F:/Resume/cohoe_resume_rev-K.tex
 (F:/Resume/cohoe_resume_rev-K.tex
@@ -319,13 +319,13 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 93.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 240.
  [1
 
 {C:/Users/cohoe/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 232.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 240.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 240.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
@@ -335,11 +335,11 @@ Here is how much of TeX's memory you used:
  8148 multiletter control sequences out of 15000+200000
  9944 words of font info for 37 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 31i,6n,23p,342b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,6n,23p,362b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on cohoe_resume_rev-K.pdf (1 page, 57798 bytes).
+Output written on cohoe_resume_rev-K.pdf (1 page, 58008 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
