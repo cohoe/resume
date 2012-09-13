@@ -1,0 +1,593 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+% The automated optical recognition software used to digitize resume
+% information works best with fonts that do not have serifs. This
+% command uses a sans serif font throughout. Uncomment both lines (or at
+% least the second) to restore a Roman font (i.e., a font with serifs).
+%%\usepackage{times}
+%%\renewcommand{\familydefault}{\sfdefault}
+
+% The OCR software also has a hard time with italics. These commands get
+% rid of the two common ways to italicize text in LaTeX. Get rid of them
+% to turn italics back on.
+\renewcommand\emph[1]{#1}
+\renewcommand\textit[1]{\underline{#1}}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=.4in,               % 1 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+\usepackage[shortlabels]{enumitem}
+
+% Simpler bibsections for CV sections
+% (thanks to natbib for inspiration)
+%
+% * For lists of references with hanging indents and no numbers:
+%
+%   \begin{bibsection}
+%       \item ...
+%   \end{bibsection}
+%
+% * For numbered lists of references (with hanging indents):
+%
+%   \begin{bibenum}
+%       \item ...
+%   \end{bibenum}
+%
+%   Note that bibenum numbers continuously throughout. To reset the
+%   counter, use
+%
+%   \restartlist{bibenum}
+%
+%   at the place where you want the numbering to reset.
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibsection}{itemize}{3}
+\setlist[bibsection]{label=,leftmargin=\bibhang,%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{label=[\arabic*],resume,leftmargin={\bibhang+\widthof{[999]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\let\oldendbibenum\endbibenum
+\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+\let\oldendbibsection\endbibsection
+\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+\makeatother
+
+%%% Setup header and footer (with page number and possible last page)
+%
+% The first block sets up pages 2--end
+% The second block sets up page 1 formatting
+%
+%%%
+%
+% NOTE: comment the +LP lines and uncomment the -LP lines to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers on pages 2--end. To get rid of page numbers on page 1,
+%       comment out the \thispagestyle{plain} line on the first page
+%       below.
+%       (also make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+
+%%%% PAGES 2--9 NUMBERING:
+%% These two lines put page number in upper-right corner of pages 2--end
+%%\rhead{Pavlic, p.~\arabic{page} of \protect\pageref*{LastPage}}   % +LP
+%%\rhead{Pavlic, p.~\arabic{page}}                                 % -LP
+
+%% These lines put page number in bottom (center) of pages 2--end
+%\lfoot{\hspace{\footpageshift}%
+%       \parbox{4in}{\, \hfill %
+%                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%%                    \arabic{page}                               % -LP
+%                    \hfill \,}}
+%%%% END PAGE 2--9 NUMBERING
+
+%%%% PAGE 1 NUMBERING:
+\makeatletter
+\let\oldps@plain\ps@plain
+\renewcommand{\ps@plain}{\oldps@plain%
+\renewcommand{\@evenfoot}{\hspace*{-\footpageshift}\hfil %
+    p.~\arabic{page} of \protect\pageref*{LastPage} % +LP
+%    p.~\arabic{page}                               % -LP
+    \hfil}%
+\renewcommand{\@oddfoot}{\@evenfoot}}
+\makeatother
+%%%% END PAGE 1 NUMBERING
+
+% Finally, give us PDF bookmarks and colored links
+%
+% NOTE: Some OCR software might be negatively affected by hyperlinks. So
+%       most employers recommend the draft option here. Alternatively,
+%       making all links black (as opposed to darkblue) should hopefully
+%       prevent problems with most OCR.
+%
+% (to enable hyperlinks and bookmarks, comment out ``draft'' line;
+%  to disable hyperlinks and bookmarks, uncomment ``draft'' line)
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{breaklinks,colorlinks,
+            linkcolor=black,urlcolor=black,
+            anchorcolor=black,citecolor=black,
+            %linkcolor=darkblue,urlcolor=darkblue,
+            %anchorcolor=darkblue,citecolor=darkblue,
+            %draft
+            }
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% HEADING AT TOP OF CURRICULUM VITAE
+
+% The title (name) with a horizontal rule under it
+% (optional argument typesets an object right-justified across from name
+%  as well)
+%
+% Usage: \makeheading{name}
+%        OR
+%        \makeheading[right_object]{name}
+%
+% Place at top of document. It should be the first thing.
+% If ``right_object'' is provided in the square-braced optional
+% argument, it will be right justified on the same line as ``name'' at
+% the top of the CV. For example:
+%
+%       \makeheading[\emph{Curriculum vitae}]{Your Name}
+%
+% will put an emphasized ``Curriculum vitae'' at the top of the document
+% as a title. Likewise, a picture could be included:
+%
+%   \makeheading[\includegraphics[height=1.5in]{my_picutre}]{Your Name}
+%
+% the picture will be flush right across from the name.
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {\LARGE \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+%%% SECTION HEADINGS
+
+% The section headings. Flush left in small caps down pseudo-margin.
+%
+% Usage: \section{section name}
+\renewcommand{\section}[1]{\pagebreak[3]%
+    \vspace{1\baselineskip}%
+    \phantomsection\addcontentsline{toc}{section}{#1}%
+    \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\hyphenpenalty=10000\raggedright #1}}}%
+    \vspace{-\baselineskip}\par}
+
+%%% LISTS
+
+% This macro alters a list by removing some of the space that follows the list
+% (is used by lists below)
+\newcommand*\fixendlist[1]{%
+    \expandafter\let\csname preFixEndListend#1\expandafter\endcsname\csname end#1\endcsname
+    \expandafter\def\csname end#1\endcsname{\csname preFixEndListend#1\endcsname\vspace{-0.6\baselineskip}}}
+
+% These macros help ensure that items in outer-type lists do not get
+% separated from the next line by a page break
+% (they are used by lists below)
+\let\originalItem\item
+\newcommand*\fixouterlist[1]{%
+    \expandafter\let\csname preFixOuterList#1\expandafter\endcsname\csname #1\endcsname
+    \expandafter\def\csname #1\endcsname{\csname preFixOuterList#1\endcsname\let\oldItem\item\def\item{\pagebreak[2]\oldItem}}
+    \expandafter\let\csname preFixOuterListend#1\expandafter\endcsname\csname end#1\endcsname
+    \expandafter\def\csname end#1\endcsname{\let\item\oldItem\csname preFixOuterListend#1\endcsname}}
+\newcommand*\fixinnerlist[1]{%
+    \expandafter\let\csname preFixInnerList#1\expandafter\endcsname\csname #1\endcsname
+    \expandafter\def\csname #1\endcsname{\let\oldItem\item\let\item\originalItem\csname preFixInnerList#1\endcsname}
+    \expandafter\let\csname preFixInnerListend#1\expandafter\endcsname\csname end#1\endcsname
+    \expandafter\def\csname end#1\endcsname{\csname preFixInnerListend#1\endcsname\let\item\oldItem}}
+
+% An itemize-style list with lots of space between items
+%
+% Usage:
+%   \begin{outerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{outerlist}
+\newlist{outerlist}{itemize}{3}
+    \setlist[outerlist]{label=\enskip\textbullet,leftmargin=*}
+    \fixendlist{outerlist}
+    \fixouterlist{outerlist}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+%
+% Usage:
+%   \begin{lonelist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{lonelist}
+\newlist{lonelist}{itemize}{3}
+    \setlist[lonelist]{label=\enskip\textbullet,leftmargin=*,partopsep=0pt,topsep=0pt}
+    \fixendlist{lonelist}
+    \fixouterlist{lonelist}
+
+% An itemize-style list with little space between items
+%
+% Usage:
+%   \begin{innerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{innerlist}
+\newlist{innerlist}{itemize}{3}
+    \setlist[innerlist]{label=\enskip\textbullet,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
+    \fixinnerlist{innerlist}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+%
+% Usage:
+%   \begin{loneinnerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{loneinnerlist}
+\newlist{loneinnerlist}{itemize}{3}
+    \setlist[loneinnerlist]{label=\enskip\textbullet,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
+    \fixendlist{loneinnerlist}
+    \fixinnerlist{loneinnerlist}
+
+%%% EXTRA SPACE
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+%%% FORMATTING MACROS
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+%\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    \TeX}}
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+
+% Custom hyphenation rules for words that LaTeX has trouble with
+\hyphenation{bio-mim-ic-ry bio-in-spi-ra-tion re-us-a-ble pro-vid-er}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%%\thispagestyle{plain}
+\makeheading{Grant Cohoe}
+
+\section{Contact Information}
+
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table. Table is one row made up of three parboxes. The left
+%       parbox has address info, the middle parbox has a vertical bar,
+%       and the right parbox has phone and electronic contact
+%       information.
+%
+% MACROS: \rcollength is the width of the right column of the table
+%             (adjust it to your liking; default is 1.85in).
+%         \spacewidth is width of area between left and right boxes.
+%         \spacechar is character used to produce perforated vertical
+%             boundary between boxes.
+%
+\newlength{\rcollength}\setlength{\rcollength}{2in}%
+\newlength{\spacewidth}\setlength{\spacewidth}{20pt}
+\newcommand\spacechar{$|$}
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}%
+
+% Address box
+\parbox{\textwidth-\rcollength-\spacewidth}{%
+3449 Nathaniel Rochester Hall\\
+Rochester, NY 14623\\}
+
+% Cheesy perforated vertical bar between boxes
+% Shorten by removing \spacechar's
+& \parbox{\spacewidth}{\centering} &
+
+% Non-snail-mail contact information
+\parbox{\rcollength}{%
+\emph{Phone:}  330-790-1701\\
+\emph{E-mail:} \email{cohoe.grant@gmail.com}\\
+\emph{Web:} \href{http://www.grantcohoe.com/}{www.grantcohoe.com}}
+
+\end{tabular}
+
+%%
+%% In modern CV's, it seems like ``Objective'' is frowned upon. Instead,
+%% incorporate it into a well-constructed cover letter. The ``More
+%% information'' can go at the end of the CV, but it should not distract
+%% from the section giving references available to contact.
+%%
+%
+\section{Objective}
+Seeking full-time employment in the planning, design, and implementation of information systems \& infrastructure. Available September 2013.
+%
+% Full-time position that allows for advanced research in electrical and
+% computer engineering (communications, control, software, electronics,
+% and sustainability), with a particular focus on complex distributed
+% systems (i.e., modeling, analysis, design, and verification)
+% \begin{innerlist}
+%     \item For more information, see \url{http://www.tedpavlic.com/engjobsearch/}
+% \end{innerlist}
+
+%%\section{Qualifications and Interests}
+
+%%Advanced control systems, complex adaptive systems, agent-based
+%%modeling, hybrid dynamic systems, distributed algorithms, amorphous
+%%computing, autonomous systems and vehicles, networks, communications,
+%%verification, cooperation, optimization, game theory, parallel
+%%computation, robotics, analog electronics, behavioral ecology,
+%%bio-mimicry
+
+%%\section{Availability}
+
+%%\begin{loneinnerlist}
+%%    \item Start time is negotiable; may be possible to start immediately
+%%    \item Geographic location is flexible, but there is preference
+%%        for Tempe, AZ
+%%\end{loneinnerlist}
+
+%%\section{Security Clearance}
+
+%%Department of Defense Top Secret SCI with polygraph (expired: 2002)
+
+% \section{Citizenship}
+%
+% USA
+
+\section{Education}
+
+\href{http://www.rit.edu/}{\textbf{Rochester Institute of Technology}},
+Rochester, NY
+\begin{outerlist}
+
+\item[] B.S.,
+        \href{http://www.nssa.rit.edu/}
+             {Applied Networking \& System Administration}, May 2013 (Expected)
+             \hfill GPA: 3.29/4.0
+        \begin{innerlist}
+        \item Minor in \href{http://www.rit.edu/programs/minor_conc/database-design-and-development}
+                            {Database Design \& Development}
+        \item Minor in \href{http://www.rit.edu/programs/minor_conc/applied-communication}
+                            {Applied Communication}
+        \item \emph{Presidential Scholarship} recipient for academic excellence
+        \end{innerlist}
+
+\end{outerlist}
+
+\section{Coursework} Advanced Routing \& Switching, 802.11 Wireless Networks, Network Services, Network Design \& Performance, Needs Assessment, Large Scale Computing with Mainframes, Data \& Process Modeling.
+
+\section{Skills}
+IPv6 Implementation, Cloud deployment, TCP/IP Routing \& Switching, Spanning Tree, Domain Services, IPsec, Routing Protocols, Amazon Web Services, UNIX-Like operating systems, Perl, Bash, PHP, and SQL. Detailed list of skills is available online at \textbf{\href{http://www.grantcohoe.com/skills}{http://www.grantcohoe.com/skills}}
+
+\section{Projects}
+
+\textbf{Open Source Network Resource \& Access Manager}
+\begin{outerlist}
+    \item[]
+            \begin{innerlist}
+                \item Designed and developed a system for auditing and management of network resources.
+                \item Allows administrators to automate provisioning within a global organization.
+            \end{innerlist}
+
+\end{outerlist}
+\halfblankline
+
+\textbf{Wireless Network Deployment}
+\begin{outerlist}
+
+    \item[]
+            \begin{innerlist}
+                \item Planned and implemented an 802.11a/n wireless network across the Computer Science House floor.
+                \item Features include Channel Bonding and Fast Reassociation with Wireless Domain Services.
+            \end{innerlist}
+
+\end{outerlist}
+\halfblankline
+
+\textbf{Computer Science House Active Directory Integration}
+\begin{outerlist}
+
+    \item[]
+            \begin{innerlist}
+                \item Integrated an Active Directory Domain Controller into the current house UNIX environment.
+                \item Services integrated include Kerberos, LDAP, NIS, and NFS. 
+            \end{innerlist}
+
+\end{outerlist}
+
+\section{Professional Experience}
+
+\href{http://www.rsa.com/}{\textbf{RSA The Security Division of EMC}},
+Bedford, MA
+\begin{outerlist}
+
+    \item[] \textit{Engineering Lab Services Intern}%
+            \hfill \textbf{Summer 2012}
+            \begin{innerlist}
+                \item Assisted in the operations of the product engineering labs in Bedford and Bangalore India.
+                \item Worked with platforms such as EMC VNX storage, VMware View, vCenter 5, vCloud Director.
+            \end{innerlist}
+\end{outerlist}
+\halfblankline
+
+\href{http://www.anheuser-busch.com/}{\textbf{Anheuser-Busch InBev}},
+Baldwinsville, NY
+\begin{outerlist}
+
+\item[] \textit{System Technology Co-op}%
+        \hfill \textbf{March 2011 to August 2010}
+\begin{innerlist}
+\item Assisted in the day to day operation and maintenance of brewery IT systems and infrastructure.
+\item Worked with PLCs, HMIs, 802.11 WiFi, Active Directory and WAN.
+\end{innerlist}
+
+\end{outerlist}
+\halfblankline
+
+\href{http://www.csh.rit.edu/}{\textbf{Computer Science House}},
+Rochester, NY
+\begin{outerlist}
+
+\item[] \textit{Chairman}%
+        \hfill \textbf{June 2012 to Present}
+\begin{innerlist}
+\item Responsible for communicating house interests with external entities (other RIT departments, corporate recruiters, etc)
+\end{innerlist}
+
+\item[] \textit{OpComm Director}%
+        \hfill \textbf{November 2011 to May 2012}
+\begin{innerlist}
+\item Lead system administrator \& point-of-contact for external communication regarding projects and policy.
+\end{innerlist}
+
+\item[] \textit{System Administrator}%
+        \hfill \textbf{March 2010 to Present}
+\begin{innerlist}
+\item Responsible for the operation of house services (email, NNTP, shell, etc) and infrastructure.
+
+\end{innerlist}
+
+\end{outerlist}
+
+
+% Add a little space to nudge next ``More Information'' marginpar
+% down to make room for tall ``References Available to Contact''
+% marginpar.
+
+\section{Honors \& Activities}
+\begin{outerlist}
+ \item[]
+            \begin{innerlist}
+		\item Deans List Spring 2012, Fall 2011, Spring 2010
+                \item \href{http://www.rithockey.com}{RIT Hockey Supporter}
+                \item \href{http://www.usfirst.org/roboticsprograms/frc}{FIRST Robotics Competition Volunteer}
+		\item \href{http://www.ldagvi.org/}{LDA Personal Instruction Contractor}
+		\item \href{http://www.ibm.com/developerworks/university/students/contests/mainframe/index.html}{IBM Master The Mainframe Participant (2010, 2011, 2012)}
+            \end{innerlist}
+\end{outerlist}
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------%
+% The following is copyright and licensing information for
+% redistribution of this LaTeX source code; it also includes a liability
+% statement. If this source code is not being redistributed to others,
+% it may be omitted. It has no effect on the function of the above code.
+%----------------------------------------------------------------------%
+% Copyright (c) 2007, 2008, 2009, 2010, 2011 by Theodore P. Pavlic
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%----------------------------------------------------------------------%
