@@ -1,4 +1,0 @@
-Exception: STATUS_ACCESS_VIOLATION at eip=610202F7
-eax=010C1C20 ebx=6122936C ecx=77440F81 edx=003441B8 esi=00000000 edi=0028F9E4
-ebp=61020A10 esp=0028C7B4 program=C:\Users\cohoe\AppData\Local\Temp\cohoe_MobaXterm\bin\bash.exe, pid 8628, thread main
-cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
