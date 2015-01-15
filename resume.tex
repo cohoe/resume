@@ -353,7 +353,7 @@
 %%\thispagestyle{plain}
 \makeheading{Grant Cohoe}
 
-\section{Contact Information}
+%\section{Contact Information}
 
 % NOTE: Mind where the & separators and \\ breaks are in the following
 %       table. Table is one row made up of three parboxes. The left
@@ -367,28 +367,28 @@
 %         \spacechar is character used to produce perforated vertical
 %             boundary between boxes.
 %
-\newlength{\rcollength}\setlength{\rcollength}{2in}%
-\newlength{\spacewidth}\setlength{\spacewidth}{20pt}
-\newcommand\spacechar{$|$}
+%\newlength{\rcollength}\setlength{\rcollength}{2in}%
+%\newlength{\spacewidth}\setlength{\spacewidth}{20pt}
+%\newcommand\spacechar{$|$}
 %
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}%
+%\begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}%
 
 % Address box
-\parbox{\textwidth-\rcollength-\spacewidth}{%
-318 Rindge Ave \#203\\
-Cambridge, MA 02140\\}
+%\parbox{\textwidth-\rcollength-\spacewidth}{%
+%318 Rindge Ave \#203\\
+%Cambridge, MA 02140\\}
 
 % Cheesy perforated vertical bar between boxes
 % Shorten by removing \spacechar's
-& \parbox{\spacewidth}{\centering} &
+%& \parbox{\spacewidth}{\centering} &
 
 % Non-snail-mail contact information
-\parbox{\rcollength}{%
-\emph{Phone:}  330-790-1701\\
-\emph{E-mail:} \email{grant@grantcohoe.com}\\
-\emph{Web:} \href{http://www.grantcohoe.com/}{http://grantcohoe.com}}
+%\parbox{\rcollength}{%
+%\emph{Phone:}  330-790-1701\\
+%\emph{E-mail:} \email{grant@grantcohoe.com}\\
+%\emph{Web:} \href{http://www.grantcohoe.com/}{http://grantcohoe.com}}
 
-\end{tabular}
+%\end{tabular}
 
 %%
 %% In modern CV's, it seems like ``Objective'' is frowned upon. Instead,
@@ -463,13 +463,13 @@ Rochester, NY
 
 \textbf{Network}: Cisco Catalyst \& Nexus Switches, Brocade SAN Switching, Cisco IronPort WSA
 
-\textbf{Services \& Applications}: OpenLDAP, BIND, Github Enterprise
+\textbf{Services \& Applications}: OpenLDAP, BIND, Github Enterprise, Docker
 
 \textbf{System Platforms}: Linux (RHEL, SLES, Debian, Gentoo), Windows Server (2003-2012R2), Solaris
 
 \textbf{Development}: Python, Bash, PHP, Git, Perforce
 
-A complete list of skills can be found at  \href{http://www.grantcohoe.com/skills} {http://grantcohoe.com/skills}
+%A complete list of skills can be found at  \href{http://www.grantcohoe.com/skills} {http://grantcohoe.com/skills}
 
 \section{Projects}
 
@@ -575,6 +575,21 @@ Rochester NY
 % Add a little space to nudge next ``More Information'' marginpar
 % down to make room for tall ``References Available to Contact''
 % marginpar.
+
+\section{Awards}
+
+\href{http://www.emc.com/}{\textbf{RSA The Security Division of EMC}},
+Bedford, MA
+\begin{outerlist}
+
+    \item[] \textit{Excellence@EMC Silver} (Transparent Proxy Implementation)
+            \hfill \textbf{Q3 2014}
+            \begin{innerlist}
+		\item Collaborated across functional groups to implement a transparent proxy system in a lab environment.
+		\item Defined and justified requirements and design to security architects and risk managers.		
+            \end{innerlist}
+\end{outerlist}
+\halfblankline
 
 \section{Activities \& Interests}
 \begin{outerlist}

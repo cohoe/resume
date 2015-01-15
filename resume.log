@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.8.21)  27 SEP 2014 17:19
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.8.21)  15 JAN 2015 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,46 +316,42 @@ LaTeX Info: Redefining \nameref on input line 352.
 \@outlinefile=\write3
 \openout3 = `resume.out'.
 
-\rcollength=\skip60
-\spacewidth=\skip61
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 374.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 374.
-
-Underfull \hbox (badness 10000) in paragraph at lines 379--379
-
- []
-
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 374--392
-[][] 
- []
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 440.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 440.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 591.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 516.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 516.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 606.
  [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 591.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 606.
  (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 591.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 591.
-Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: C1C0CE67CDA8A8FE3AABDF9F23C85E8D;306.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 591.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 606.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 606.
+
+
+Package rerunfilecheck Warning: File `resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `resume.out':
+(rerunfilecheck)             Before: B08B88C9A29DAECACD36A61075E504D7;251
+(rerunfilecheck)             After:  CF152991386F32C4C5A3AF66A2CFEE74;293.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 606.
  ) 
 Here is how much of TeX's memory you used:
- 5869 strings out of 495034
- 87070 string characters out of 6181677
+ 5865 strings out of 495034
+ 87029 string characters out of 6181677
  184780 words of memory out of 5000000
- 9052 multiletter control sequences out of 15000+600000
+ 9048 multiletter control sequences out of 15000+600000
  4855 words of font info for 18 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
  29i,11n,43p,304b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -364,10 +360,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on resume.pdf (1 page, 76005 bytes).
+Output written on resume.pdf (1 page, 75456 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
