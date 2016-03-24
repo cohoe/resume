@@ -459,19 +459,39 @@ Rochester, NY
 \section{Skills}
 \textbf{Management Tools}: Puppet, VMware vSphere, Cisco UCS Manager, EMC Unisphere
 
-\textbf{Cloud Providers}: Amazon Web Services, Microsoft Azure, VMware vCloud
+\textbf{Cloud Providers}: Amazon Web Services, Microsoft Azure, VMware vCloud \& vCloud Air
 
-\textbf{Network}: Cisco Catalyst \& Nexus Switches, Brocade SAN Switching, Cisco IronPort WSA
+\textbf{Network}: Cisco Catalyst \& Nexus Switching, IronPort WSA, VPN (IPsec, AnyConnect)
 
-\textbf{Services \& Applications}: OpenLDAP, BIND, Github Enterprise, Docker
+\textbf{Services \& Applications}: OpenLDAP, ISC-BIND/DHCPD, Jenkins, Github Enterprise, Docker
 
-\textbf{System Platforms}: Linux (RHEL, SLES, Debian, Gentoo), Windows Server (2003-2012R2), Solaris
+\textbf{System Platforms}: Linux (Focus: RHEL/SLES), Windows Server (2003-2012R2), Solaris
 
 \textbf{Development}: Python, Bash, PHP, Git, Perforce
 
 %A complete list of skills can be found at  \href{http://www.grantcohoe.com/skills} {http://grantcohoe.com/skills}
 
 \section{Projects}
+
+\textbf{College Hockey Scheduling API} (In Progress)
+\begin{outerlist}
+    \item[]
+            \begin{innerlist}
+                \item Designed and implemented a RESTful API using DynamoDB, Lambda, and API Gateway (AWS).
+                \item Uses the \href{http://www.serverless.com/}{Serverless} framework to provide high scalability with no persistent infrastucture.
+            \end{innerlist}
+\end{outerlist}
+\halfblankline
+
+\textbf{Pipeline-based Package Mirror}
+\begin{outerlist}
+    \item[]
+            \begin{innerlist}
+                \item Developed an RPM HTTP-only mirror system using \href{https://github.com/constantcontact/jenkins_pipeline_builder}{Jenkins Pipeline Builder} and Python.
+                \item Jobs defined as JSON so service is fully deployable from VCS (only Jenkins installation required).
+            \end{innerlist}
+\end{outerlist}
+\halfblankline
 
 \textbf{Open Source Network Resource \& Access Manager} - \href{http://www.grantcohoe.com/projects/starrs}{http://grantcohoe.com/projects/starrs}
 \begin{outerlist}
@@ -489,23 +509,23 @@ Rochester, NY
 
     \item[]
             \begin{innerlist}
-                \item Planned and implemented an 802.11a/n wireless network across the Computer Science House floor.
+                \item Planned and implemented an 802.11a/n wireless network across the a college dorm floor.
                 \item Features include Channel Bonding and Fast Reassociation with Wireless Domain Services.
             \end{innerlist}
 
 \end{outerlist}
 \halfblankline
 
-\textbf{Computer Science House Active Directory Integration} - \href{http://www.grantcohoe.com/projects/adkrb}{http://grantcohoe.com/projects/adkrb}
-\begin{outerlist}
-
-    \item[]
-            \begin{innerlist}
-                \item Integrated an Active Directory Domain Controller into the house UNIX environments.
-                \item Services integrated include Kerberos, LDAP, NIS, and NFS. 
-            \end{innerlist}
-
-\end{outerlist}
+%\textbf{Computer Science House Active Directory Integration} - \href{http://www.grantcohoe.com/projects/adkrb}{http://grantcohoe.com/projects/adkrb}
+%\begin{outerlist}
+%
+%    \item[]
+%           \begin{innerlist}
+%                \item Integrated an Active Directory Domain Controller into the house UNIX environments.
+%                \item Services integrated include Kerberos, LDAP, NIS, and NFS. 
+%            \end{innerlist}
+%
+%\end{outerlist}
 
 \section{Professional Experience}
 
@@ -518,7 +538,7 @@ Bedford, MA
             \begin{innerlist}
 		\item Responsible for driving implementation initiatives such as VPN tunneling \& system automation. 
 		\item Work with cross-functional teams across the world to deliver projects in a complete and timely manner. 		
-		\item Take ownership of certain essential services such as package management and user authentication.
+		\item Provide level 3 support to all systems and services in the global engineering infrastructure.
             \end{innerlist}
 
     \item[] \textit{System Administrator} (Engineering Lab Services / Release Engineering)
@@ -557,19 +577,19 @@ North Springfield PA
 %% \item Responsible for communicating house interests and maintaining relations with external entities (other RIT %% departments, corporate recruiters, etc) 
 %% \end{innerlist}
 
-\href{http://www.csh.rit.edu/}{\textbf{Computer Science House @ RIT}},
-Rochester NY
-\begin{outerlist}
-\item[] \textit{System Administrator}%
-        \hfill \textbf{March 2010 to May 2013}
-\begin{innerlist}
-\item Responsible for the maintenance and operation of house services (such as mail, news, web, and shell).
-\item Managed a user base of all current members of the house as well as alumni and advisors.
-\item Worked with other campus entities to ensure network policy compliance and service integration.
-
-%%\item Maintained documentation for IT processes and procedures.
-\end{innerlist}
-\end{outerlist}
+%\href{http://www.csh.rit.edu/}{\textbf{Computer Science House @ RIT}},
+%Rochester NY
+%\begin{outerlist}
+%\item[] \textit{System Administrator}%
+%        \hfill \textbf{March 2010 to May 2013}
+%\begin{innerlist}
+%\item Responsible for the maintenance and operation of house services (such as mail, news, web, and shell).
+%\item Managed a user base of all current members of the house as well as alumni and advisors.
+%\item Worked with other campus entities to ensure network policy compliance and service integration.
+%
+%%%\item Maintained documentation for IT processes and procedures.
+%\end{innerlist}
+%\end{outerlist}
 
 
 % Add a little space to nudge next ``More Information'' marginpar
@@ -578,28 +598,38 @@ Rochester NY
 
 \section{Awards}
 
-\href{http://www.emc.com/}{\textbf{RSA The Security Division of EMC}},
-Bedford, MA
+\textbf{Excellence@EMC Silver}
 \begin{outerlist}
-
-    \item[] \textit{Excellence@EMC Silver} (Transparent Proxy Implementation)
-            \hfill \textbf{Q3 2014}
+    \item[] \textit{Transparent Proxy Implementation}
+         \hfill \textbf{September 2014}
             \begin{innerlist}
-		\item Collaborated across functional groups to implement a transparent proxy system in a lab environment.
-		\item Defined and justified requirements and design to security architects and risk managers.		
+		\item Worked with multiple orgs to implement a transparent proxy solution to improve user workflow.
             \end{innerlist}
 \end{outerlist}
-\halfblankline
+\begin{outerlist}
+    \item[] \textit{Whatever It Takes}
+\hfill \textbf{January 2016}
+            \begin{innerlist}
+		\item Worked nonstop after hours with team until services were restored after building UPS failure.
+            \end{innerlist}
+\end{outerlist}
+\begin{outerlist}
+    \item[] \textit{Quick Connectivity Solution}
+\hfill \textbf{March 2016}
+            \begin{innerlist}
+		\item Explained restrictions and provided connectivity solution to engineering team facing imminent deadline.
+            \end{innerlist}
+\end{outerlist}
 
 \section{Activities \& Interests}
 \begin{outerlist}
  \item[]
             \begin{innerlist}
-	                \item College Hockey Enthusiast
-			\item Amateur Hockey Player
-           	     \item \href{http://www.usfirst.org/roboticsprograms/frc}{FIRST Robotics Competition Volunteer}
-		\item \href{http://ists.sparsa.org}{RIT Information Security Talent Search} participant (2nd place 2013, 3rd place 2011)
-		\item Frequent TED(x) \& Barcamp Attendee
+	                \item Mens \& Womens College/Pro Hockey Fan
+			\item Amateur Ice Hockey Player
+           	     \item Former \href{http://www.usfirst.org/roboticsprograms/frc}{FIRST Robotics Competition} Participant and Volunteer
+		\item Frequent TEDx \& Barcamp Attendee
+		\item Outdoor Excursion Enthusiast
 
             \end{innerlist}
 \end{outerlist}
