@@ -65,19 +65,11 @@
 
 %% Use these lines for letter-sized paper
 \usepackage[paper=letterpaper,
-            %includefoot, % Uncomment to put page number above margin
+            includefoot, % Uncomment to put page number above margin
             marginparwidth=1in,     % Length of section titles
             marginparsep=.05in,       % Space between titles and text
             margin=.4in,               % 1 inch margins
             includemp]{geometry}
-
-%% Use these lines for A4-sized paper
-%\usepackage[paper=a4paper,
-%            %includefoot, % Uncomment to put page number above margin
-%            marginparwidth=30.5mm,    % Length of section titles
-%            marginparsep=1.5mm,       % Space between titles and text
-%            margin=25mm,              % 25mm margins
-%            includemp]{geometry}
 
 %% More layout: Get rid of indenting throughout entire document
 \setlength{\parindent}{0in}
@@ -228,6 +220,13 @@
         {\hspace*{-\marginparsep minus \marginparwidth}%
          \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
              {\LARGE \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+\newcommand{\makefooter}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {#2 \hfill #1}\\[-0.15\baselineskip]%
                  \rule{\columnwidth}{1pt}%
          \end{minipage}}
 
@@ -439,6 +438,7 @@ Operations engineer with excellent problem solving abilities and extensive knowl
 
 %%Advanced Routing \& Switching, 802.11 Wireless Networks, Network Services, Network Design \& %%Performance, Network Troubleshooting, Needs Assessment, Large Scale Computing with Mainframes, Data %%\& Process Modeling, Telephony Integration.
 
+%% Begin Skills
 \section{Skills}
 \textbf{Orchestration Tools}: Ansible, Puppet, Terraform
 
@@ -453,74 +453,7 @@ Operations engineer with excellent problem solving abilities and extensive knowl
 \textbf{Operating Systems}: Linux (Focus: RHEL/CentOS/Fedora), FreeBSD, Windows, MacOS
 
 \textbf{Software Development}: Python, Bash, Git
-
-%A complete list of skills can be found at  \href{http://www.grantcohoe.com/skills} {http://grantcohoe.com/skills}
-
-\section{Projects}
-
-\textbf{Cocktail Recipe Research Platform} (In Progress) - \href{https://github.com/cohoe/amari}{https://github.com/cohoe/amari}
-\begin{outerlist}
-    \item[]
-            \begin{innerlist}
-                \item Built a full-stack application platform to manage and query recipes in a variety of domain-specific ways.
-                \item Stack consists of React, Flask (RESTx), Zookeeper, Redis, ElasticSearch, PostgreSQL, Cognito.
-            \end{innerlist}
-\end{outerlist}
-\halfblankline
-
-\textbf{Puppet Infrastructure for Computer Camp} - \href{https://github.com/CFCC/TurboPuppet}{https://github.com/CFCC/TurboPuppet}
-\begin{outerlist}
-    \item[]
-            \begin{innerlist}
-                \item Implemented Puppet to fully provision camper computers for a two-week summer program.
-		 \item Built using many industry best practices learned at Constant Contact and through the community.
-            \end{innerlist}
-\end{outerlist}
-\halfblankline
-
-\textbf{Bluetooth Headphone Connection Manager} - \href{https://github.com/cohoe/maxime}{https://github.com/cohoe/maxime}
-\begin{outerlist}
-    \item[]
-            \begin{innerlist}
-                \item Tool in Python on Fedora Linux to manage PulseAudio sinks \& deal with Bluetooth connectivity quirks.
-                \item Listens for DBus events and routes audio stream based on user configuration and connection state.
-            \end{innerlist}
-\end{outerlist}
-\halfblankline
-
-\textbf{Open Source Network Resource \& Access Manager} - \href{https://www.grantcohoe.com/projects/starrs}{https://grantcohoe.com/projects/starrs}
-\begin{outerlist}
-    \item[]
-            \begin{innerlist}
-                \item Designed and developed an interactive system for auditing and management of network resources.
-                \item Gives users a self-service portal to provision logical resources such as IP addresses and DNS records.
-            \end{innerlist}
-\end{outerlist}
-
-\halfblankline
-
-%\textbf{Wireless Network Deployment}
-%\begin{outerlist}
-%
-%    \item[]
-%            \begin{innerlist}
-%                \item Planned and implemented an 802.11a/n wireless network across the a college dorm floor.
-%                \item Features include Channel Bonding and Fast Reassociation with Wireless Domain Services.
-%            \end{innerlist}
-%
-%\end{outerlist}
-%\halfblankline
-
-%\textbf{Computer Science House Active Directory Integration} - \href{http://www.grantcohoe.com/projects/adkrb}{http://grantcohoe.com/projects/adkrb}
-%\begin{outerlist}
-%
-%    \item[]
-%           \begin{innerlist}
-%                \item Integrated an Active Directory Domain Controller into the house UNIX environments.
-%                \item Services integrated include Kerberos, LDAP, NIS, and NFS. 
-%            \end{innerlist}
-%
-%\end{outerlist}
+%% End Skills
 
 \section{Professional Experience}
 
@@ -608,10 +541,93 @@ North Springfield PA
 %\end{innerlist}
 %\end{outerlist}
 
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
 
-% Add a little space to nudge next ``More Information'' marginpar
-% down to make room for tall ``References Available to Contact''
-% marginpar.
+\begin{changemargin}{0cm}{0cm}
+\fancyfoot[L]{This document can be found at \href{https://resume.grantcohoe.com}{https://resume.grantcohoe.com}}
+\renewcommand{\footrulewidth}{0.4pt}
+\end{changemargin}
+
+
+\pagebreak
+
+%% Begin Projects
+\section{Projects}
+
+\textbf{Cocktail Recipe Research Platform} (In Progress) - \href{https://github.com/cohoe/amari}{https://github.com/cohoe/amari}
+\begin{outerlist}
+    \item[]
+            \begin{innerlist}
+                \item Built a full-stack application platform to manage and query recipes in a variety of domain-specific ways.
+                \item Stack consists of React, Flask (RESTx), Zookeeper, Redis, ElasticSearch, PostgreSQL, Cognito.
+            \end{innerlist}
+\end{outerlist}
+\halfblankline
+
+\textbf{Puppet Infrastructure for Computer Camp} - \href{https://github.com/CFCC/TurboPuppet}{https://github.com/CFCC/TurboPuppet}
+\begin{outerlist}
+    \item[]
+            \begin{innerlist}
+                \item Implemented Puppet to fully provision camper computers for a two-week summer program.
+		 \item Built using many industry best practices learned at Constant Contact and through the community.
+            \end{innerlist}
+\end{outerlist}
+\halfblankline
+
+\textbf{Bluetooth Headphone Connection Manager} - \href{https://github.com/cohoe/maxime}{https://github.com/cohoe/maxime}
+\begin{outerlist}
+    \item[]
+            \begin{innerlist}
+                \item Tool in Python on Fedora Linux to manage PulseAudio sinks \& deal with Bluetooth connectivity quirks.
+                \item Listens for DBus events and routes audio stream based on user configuration and connection state.
+            \end{innerlist}
+\end{outerlist}
+\halfblankline
+
+\textbf{Open Source Network Resource \& Access Manager} - \href{https://www.grantcohoe.com/projects/starrs}{https://grantcohoe.com/projects/starrs}
+\begin{outerlist}
+    \item[]
+            \begin{innerlist}
+                \item Designed and developed an interactive system for auditing and management of network resources.
+                \item Gives users a self-service portal to provision logical resources such as IP addresses and DNS records.
+            \end{innerlist}
+\end{outerlist}
+
+\halfblankline
+
+%\textbf{Wireless Network Deployment}
+%\begin{outerlist}
+%
+%    \item[]
+%            \begin{innerlist}
+%                \item Planned and implemented an 802.11a/n wireless network across the a college dorm floor.
+%                \item Features include Channel Bonding and Fast Reassociation with Wireless Domain Services.
+%            \end{innerlist}
+%
+%\end{outerlist}
+%\halfblankline
+
+%\textbf{Computer Science House Active Directory Integration} - \href{http://www.grantcohoe.com/projects/adkrb}{http://grantcohoe.com/projects/adkrb}
+%\begin{outerlist}
+%
+%    \item[]
+%           \begin{innerlist}
+%                \item Integrated an Active Directory Domain Controller into the house UNIX environments.
+%                \item Services integrated include Kerberos, LDAP, NIS, and NFS. 
+%            \end{innerlist}
+%
+%\end{outerlist}
+
+%% End Projects
 
 \section{Education}
 
