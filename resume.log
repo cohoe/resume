@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.9.13)  13 SEP 2021 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.10.18)  18 OCT 2021 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -240,22 +240,22 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (./resume.aux)
 \openout1 = `resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 352.
-LaTeX Font Info:    ... okay on input line 352.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -306,7 +306,7 @@ LaTeX Font Info:    ... okay on input line 352.
 \everyMPtoPDFconversion=\toks19
 )
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 352.
+Package hyperref Info: Link coloring ON on input line 351.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -318,49 +318,49 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count275
 )
-LaTeX Info: Redefining \ref on input line 352.
-LaTeX Info: Redefining \pageref on input line 352.
-LaTeX Info: Redefining \nameref on input line 352.
+LaTeX Info: Redefining \ref on input line 351.
+LaTeX Info: Redefining \pageref on input line 351.
+LaTeX Info: Redefining \nameref on input line 351.
 
 (./resume.out) (./resume.out)
 \@outlinefile=\write3
 \openout3 = `resume.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 531.
+(Font)              <7> on input line 395.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 531.
+(Font)              <5> on input line 395.
  [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 687.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 560.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 687.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 560.
  (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 687.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 687.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 560.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 560.
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: 856FD46D448C5C702ACE8AB970FC678B;391.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 687.
+(rerunfilecheck)             Checksum: 877B98B5C81B654380FC56C9F7DE4B62;391.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 560.
  ) 
 Here is how much of TeX's memory you used:
  6008 strings out of 482555
- 92476 string characters out of 5952145
- 369150 words of memory out of 6000000
+ 92476 string characters out of 5952144
+ 366150 words of memory out of 6000000
  21569 multiletter control sequences out of 15000+600000
  533888 words of font info for 29 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
- 34i,12n,45p,304b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,234b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on resume.pdf (2 pages, 78116 bytes).
+Output written on resume.pdf (2 pages, 78708 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  11 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
